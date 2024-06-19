@@ -44,6 +44,7 @@ main {
 
 .department_details {
   background-color: rgb(143, 120, 120);
+  height: 500px;
 }
 
 .department_details ul {
@@ -99,6 +100,7 @@ padding: 0;
 .staff {
   background-color: rgb(194, 172, 150);
   margin: 20px 0;
+  height: 600px;
 }
 
 #staff_title {
