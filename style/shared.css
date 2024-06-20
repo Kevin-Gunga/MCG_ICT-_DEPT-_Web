@@ -1,0 +1,125 @@
+header {
+    background-color: rgb(15, 77, 28);
+  }
+  
+  #heading {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 20px 0 10px 0;
+  }
+  
+  #heading img {
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+  }
+  
+  #heading h1 {
+    font-family: serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 20px;
+    cursor: pointer;
+  }
+  
+  hr {
+    /* padding: 10px; */
+  }
+  nav ul {
+    color: rgb(212, 200, 32);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  nav ul li {
+    list-style: none;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+  
+  nav ul li:hover {
+    background-color: rgb(236, 236, 236);
+    color: rgb(79, 79, 79);
+    /* font-weight: 500; */
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 10px;
+  }
+
+
+footer {
+    background-color: rgb(15, 77, 28);
+    height: 500px;
+  }
+  
+  #footer-details {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #core-values ul {
+    margin: 20px;
+  }
+  
+  #core-values ul h2 {
+    text-transform: capitalize;
+    font-family: serif;
+  }
+  #core-values ul li {
+    list-style: circle;
+    text-transform: capitalize;
+    font-family: sans-serif;
+  }
+  
+  #commitment-obligations ul {
+    margin: 20px;
+  }
+  
+  #commitment-obligations ul h2 {
+    text-transform: capitalize;
+    font-family: serif;
+  }
+  
+  #commitment-obligations ul li {
+    list-style: circle;
+    text-transform: capitalize;
+    font-family: sans-serif;
+  }
+  
+  form {
+    margin: 0 20px;
+  }
+  
+  #complain {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-size: 20px;
+  }
+  
+  .complain_input {
+    margin: 0 0 10px 0;
+  }
+  
+  #submit-complain-form-button {
+    background-color: rgb(194, 172, 150);
+    color: rgb(22, 21, 6);
+    border-radius: 5px;
+    border: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: rgb(160, 142, 142);
+    display: flex;
+    padding: 5px;
+    width: 70px;
+    margin: 20px auto;
+  }
+  
