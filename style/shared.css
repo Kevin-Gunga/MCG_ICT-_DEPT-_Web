@@ -56,7 +56,7 @@ header {
 
 footer {
     background-color: rgb(15, 77, 28);
-    height: 500px;
+    height: 400px;
   }
   
   #footer-details {
@@ -121,5 +121,11 @@ footer {
     padding: 5px;
     width: 70px;
     margin: 20px auto;
+  }
+
+  svg {
+    height: -50px;
+    width: 60px;
+    margin: auto;
   }
   
