@@ -4,7 +4,7 @@ body {
   padding: 0;
 }
 
-#students {
+#apply-attachment-form {
   background-color: rgb(160, 142, 142);
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@ body {
   box-shadow:  2px 2px 5px rgb(101, 101, 101);
 }
 
-#students input {
+#apply-attachment-form input {
   width: 300px;
   margin: 0 auto 20px auto;
 }
@@ -37,7 +37,7 @@ body {
   width: 60px;
 }
 
-#attendance-form {
+#submit-attachment-button {
   background-color: rgb(194, 172, 150);
   color: rgb(22, 21, 6);
   border-radius: 5px;
@@ -49,8 +49,55 @@ body {
   padding: 10px;
   display: flex;
   text-align: center;
-  /* align-items: center; */
-  /* margin: auto; */
-  /* display: flex; */
-  /* float: right; */
+  text-decoration: none;
+}
+
+#attendance-button{ 
+  background-color: rgb(194, 172, 150);
+  color: rgb(22, 21, 6);
+  border-radius: 5px;
+  border: none;
+  font-family: sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-shadow: rgb(101, 101, 101);
+  padding: 10px;
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+}
+
+#sign-attendance-form{
+  background-color: rgb(160, 142, 142);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 0 0 0;
+  margin: 0 auto 20px auto;
+  width: 500px;
+  height: 400px;
+  font-family: sans-serif;
+  border-radius: 5px;
+  box-shadow:  2px 2px 5px rgb(101, 101, 101);
+}
+
+#sign-attendance-form input {
+  margin: 0 auto 20px auto;
+  width: 200px;
+}
+
+#submit-attendance-button{  
+  background-color: rgb(194, 172, 150);
+  color: rgb(22, 21, 6);
+  border-radius: 5px;
+  border: none;
+  font-family: sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-shadow: rgb(101, 101, 101);
+  padding: 10px;
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
 }

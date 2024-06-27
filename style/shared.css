@@ -24,9 +24,7 @@ header {
     cursor: pointer;
   }
   
-  hr {
-    /* padding: 10px; */
-  }
+ 
   nav ul {
     color: rgb(212, 200, 32);
     display: flex;
@@ -45,7 +43,6 @@ header {
   nav ul li:hover {
     background-color: rgb(236, 236, 236);
     color: rgb(79, 79, 79);
-    /* font-weight: 500; */
     font-size: 22px;
     cursor: pointer;
     border-radius: 5px;
