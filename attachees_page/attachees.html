@@ -6,8 +6,10 @@
     <title>attachment</title>
     <link rel="stylesheet" href="/style/shared.css" />
     <link rel="stylesheet" href="./attachees.css">
+    <script src="./attachees.js" defer></script>
   </head>
   <body>
+    <div id="backdrop"></div>
     <header>
       <div id="heading">
         <img src="/images/mig_icon.png" alt="county logo" />
@@ -35,8 +37,10 @@
       <nav>
     </header>
     <main>
-        <form id="apply-attachment-form" action="">
-          <p>Are you a student from any university/college and would wish to apply for an attachment in our department?Feel free to fill this form for application.Thank you!!!</p>
+        <form  id="form-1" action="" method="post">
+
+          <div id="apply-attachment-form">
+            <p>Are you a student from any university/college and would wish to apply for an attachment in our department?Feel free to fill this form for application.Thank you!!!</p>
             <label for="first-name">Enter your first name</label>
             <input type="text" name="first-name" id="first-name">
 
@@ -57,28 +61,46 @@
 
             <label for="documents">Attach your resume and any other  necessary <br>documents</label>
             <input type="file" name="documents" id="documents">
-            <a id="submit-attachment-button" href="">Submit</a>
+          </div>
+          
+            <div id="attachment-buttons">
+              <button type="button"  id="submit-attachment-button">Cancel</button>
+              <button type="submit" id="submit-attachment-button" href="">Submit</button>
+            </div>      
+        
         </form>
-        <button id="attendance-button">sign in attendance form</button>
-        <form id="sign-attendance-form" action="" method="post">
-          <label for="">Enter date</label>
-          <input type="date" id="date" name="date">
 
-          <label for="f-name">Enter your full name</label>
-          <input type="text" id="f-name" name="f-name">
+        <div id="attendance">
+          <button id="attendance-button">sign in attendance form</button>
+          <form id="form-2" action="" method="post">
 
-          <label for="id">Enter your national id</label>
-          <input type="number" id="id" name="id">
-
-          <label for="">Enter time in</label>
-          <input type="time" id="time-in" name="time-in">
-
-          <label for="">Enter time out</label>
-          <input type="time" id="time-out" name="time-out">
-          <a id="submit-attendance-button" href="">Submit</a>
-          <!-- <label for="">live location</label> -->
-
-        </form>
+            <div id="sign-attendance-form">
+              <label for="">Enter date</label>
+              <input type="date" id="date" name="date">
+    
+              <label for="f-name">Enter your full name</label>
+              <input type="text" id="f-name" name="f-name">
+    
+              <label for="id">Enter your national id</label>
+              <input type="number" id="id" name="id">
+    
+              <label for="">Enter time in</label>
+              <input type="time" id="time-in" name="time-in">
+    
+              <label for="">Enter time out</label>
+              <input type="time" id="time-out" name="time-out">
+            </div>
+           
+            <div id="attendance-buttons">
+              <button type="button" class="submit-attendance-button" id="remove-attendance-form">Cancel</button>
+              <button type="submit" class="submit-attendance-button">Submit</button>
+            </div>
+            
+            <!-- <label for="">live location</label> -->
+  
+          </form>
+        </div>
+     
     </main>
     <footer>
         <!-- <div class="media">
