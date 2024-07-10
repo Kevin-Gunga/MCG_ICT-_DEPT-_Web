@@ -1,21 +1,27 @@
 body {
-  background-color: rgb(226, 214, 214);
+  background-color: rgb(220, 220, 220);
   margin: 0;
   padding: 0;
 }
 
 main {
-  background-color: rgb(209, 197, 197);
   margin: 0;
   padding: 0;
 }
 
-.department_details {
-  background-color: rgb(160, 142, 142);
-  height: 600px;
+#img {
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  /* height: 950px; */
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
-.department_details ul {
+#department_details {
+  background-color:  rgb(225, 230, 226);
+}
+
+#department_details ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -23,59 +29,91 @@ main {
   padding: 0;
 }
 
-.department_details ul li {
-  margin: 0 auto;
+#department_details ul li {
+  margin: 20px auto;
 }
 
 #mission {
-  background-color: rgb(226, 214, 214);
+  position: relative;
   width: 280px;
   text-transform: uppercase;
   text-align: center;
   font-size: 20px;
   font-family: serif;
   padding: 5px 0;
-  margin: 20px auto 10px auto;
+  margin: 0 auto 0 auto;
   border-radius: 5px;
 }
 
+#mission::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right,  rgb(54, 155, 76) 50%, rgb(212, 200, 32) 50%)  ;
+}
+
 #vision {
-  background-color: rgb(226, 214, 214);
+  position: relative;
   width: 140px;
   text-transform: uppercase;
   text-align: center;
   font-size: 20px;
   font-family: serif;
   padding: 5px 0;
-  margin: 20px auto 10px auto;
+  margin: 0 auto 0 auto;
   border-radius: 5px;
 }
 
+#vision::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right,  rgb(54, 155, 76) 50%, rgb(212, 200, 32) 50%);
+}
+
 #goals {
-  background-color: rgb(226, 214, 214);
+  position: relative;
   width: 150px;
   text-transform: uppercase;
   text-align: center;
   font-size: 20px;
   font-family: serif;
   padding: 5px 0;
-  margin: 20px auto 10px auto;
+  margin: 0 auto 0 auto;
   border-radius: 5px;
 }
 
-.department_details ul li p {
-  margin: auto;
+#goals::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right,  rgb(54, 155, 76) 50%, rgb(212, 200, 32) 50%); 
+}
+
+#department_details ul li p {
+  margin: 10px auto;
   padding: 0;
   font-family: sans-serif;
 }
 
-.department_details ol li {
+#department_details ol li {
   padding: 5px;
   font-family: serif;
+  margin: 10px 0;
 }
 
 #staff {
-  background-color: rgb(189, 180, 180);
+  /* background-color: rgb(189, 180, 180); */
+  background-color:  rgb(225, 230, 226);
   margin: 20px 0;
   /* height: 600px; */
 }
@@ -110,12 +148,13 @@ main {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: rgb(223, 209, 209);
+  /* background-color: rgb(223, 209, 209); */
   margin: 20px auto 20px auto;
   border-radius: 5px;
   height: 450px;
   width: 320px;
-  box-shadow: 2px 2px 5px rgb(101, 101, 101);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* box-shadow: 2px 2px 5px rgb(101, 101, 101); */
 }
 
 #staff ul li h2 {
