@@ -25,7 +25,6 @@ header {
 }
 
 nav ul {
-  color: rgb(212, 200, 32);
   display: flex;
   justify-content: center;
   padding: 10px;
@@ -40,6 +39,11 @@ nav ul li {
   padding: 10px 20px;
 }
 
+nav ul li a {
+  color: rgb(212, 200, 32);
+  text-decoration: none;
+}
+
 nav ul li:hover {
   background-color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -49,7 +53,7 @@ nav ul li:hover {
 
 footer {
   background-color: rgb(54, 155, 76);
-  padding: 20px 0 10px 0;
+  padding: 20px 0 0px 0;
 }
 
 #footer-details {
@@ -106,10 +110,12 @@ footer {
   height: 350px;
 }
 
-#form p {
+#form h3 {
   padding: 0;
   margin: 10px;
   font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 #form input {
@@ -162,10 +168,20 @@ footer {
   margin: auto;
 }
 
+#chatbot-overlay {
+  background-color: rgb(220, 220, 220);
+  height: 400px;
+  width: 350px;
+  border-radius: 6px;
+  border: 2px solid rgb(225, 230, 226);
+  display: none;
+}
+
 #question-chatbot{
-  margin: 0 auto 0 auto;
+  margin: 10px auto 0 auto;
   padding: 10px 0;
   border-top: 2px solid rgb(220, 220, 220);
+  cursor: pointer;
 }
 
 /* #media {} */
@@ -185,13 +201,15 @@ footer {
 }
 
 footer p {
-  margin: 0 ;
-  padding: 120px 0 0 0 ;
+  height: 50px;
+  margin: 50px 0 0 0;
+  padding: 20px 0 0 0 ;
   text-align: center;
   text-transform: capitalize;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-footer p a {
+footer p a{
   text-decoration: none;
   color: rgb(225, 230, 226);
 }

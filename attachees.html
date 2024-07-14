@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="/scripts/attachees.js" defer></script>
+    <script src="/scripts/shared.js" defer></script>
   </head>
   <body>
     <div id="backdrop"></div>
@@ -28,15 +29,15 @@
       <nav>
          <ul>
           <li>
-            ict technical staff
+            <a href="">ict technical staff</a>
           </li>
           <li>
-            online meeting
+            <a href="">online meeting</a>
           </li>
           <li>
-            attachment
+            <a href="">attachment</a>
           </li>
-          <li>report problem</li>
+          <li><a href="#form">report problem</a></li>
         </ul>
       <nav>
     </header>
@@ -140,7 +141,7 @@
           </div>
 
           <form id="form" action="url" method="post">
-            <p>report here:</p>
+            <h3>report here:</h3>
 
             <input
               type="email"
@@ -182,16 +183,19 @@
         </div>
 
         <div id="chatbotMedia-Links">
-          <a href="" id="question-chatbot"
+          <div id="chatbot-overlay"></div>
+          <a  id="question-chatbot"
             ><i class="fa-solid fa-circle-question fa-3x"></i>
           </a>
-
+<!-- <button></button> -->
           <div id="media">
             <ul>
               <li><h3>contact us:</h3></li>
               <li>
-                <a href="https://www.google.co.ke/maps/place/ICT+Centre,+Migori/@-1.067858,34.4767885,17z/data=!3m1!4b1!4m6!3m5!1s0x19d3536440be75e5:0xad1a1ca2a8bcb593!8m2!3d-1.067858!4d34.4793634!16s%2Fg%2F11dymnpmlf?entry=ttu"
-                target="_blank">
+                <a
+                  href="https://www.google.co.ke/maps/place/ICT+Centre,+Migori/@-1.067858,34.4767885,17z/data=!3m1!4b1!4m6!3m5!1s0x19d3536440be75e5:0xad1a1ca2a8bcb593!8m2!3d-1.067858!4d34.4793634!16s%2Fg%2F11dymnpmlf?entry=ttu"
+                  target="_blank"
+                >
                   <i class="fa-solid fa-location-dot fa-2x"></i>
                   195-40400 Suna-Migori
                 </a>
@@ -213,7 +217,7 @@
         </div>
       </div>
 
-      <p>
+      <p id>
         &copy;2024.developed by
         <a href="Kevin-Gunga.netlify.app" target="_blank">kevin gunga</a>
       </p>
