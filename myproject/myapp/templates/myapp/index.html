@@ -1,22 +1,23 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MCG IT DEPT</title>
-    <link rel="stylesheet" href="/style/index.css" />
-    <link rel="stylesheet" href="/style/shared.css" />
+    <link rel="stylesheet" href="{% static 'style/index.css' %}" />
+    <link rel="stylesheet" href="{% static 'style/shared.css' %}" />
     <script
       src="https://kit.fontawesome.com/6f82847460.js"
       crossorigin="anonymous"
     ></script>
-    <script src="/scripts/index.js" defer></script>
-    <script src="/scripts/shared.js" defer></script>
+    <script src="{% static '/scripts/index.js' %}" defer></script>
+    <script src="{% static '/scripts/shared.js' %}" defer></script>
   </head>
   <body>
     <header>
       <div id="heading">
-        <img src="/images/mig_icon.png" alt="county logo" />
+        <a href="{% url 'myapp:index' %}"> <img src="{% static '/images/mig_icon.png' %}" alt="county logo" /></a>
         <h1>
           migori county government department of ict, e-governance and
           innovation
@@ -25,20 +26,21 @@
       <hr />
       <nav>
         <ul>
-          <li><a href="#staff">ict technical staff</a></li>
+          <li><a href="{% url 'myapp:index' %}#staff">ict technical staff</a></li>
           <li><a href="">online meeting</a></li>
-          <li><a href="/attachees.html">attachment</a></li>
-          <li><a href="#form">report problem</a></li>
+          <li><a href="{% url 'myapp:attachees' %}">attachment</a></li>
+          <li><a href="{% url 'myapp:index' %}#form">report problem</a></li>
+          <li><a href="{% url 'myapp:index' %}#chatbotMedia-Links">virtual assistant</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section>
+        <!-- <img src="{% static 'images/chief-projs.jpg' %}" alt=""> -->
         <div id="body-overlay"></div>
       </section>
 
-      <!-- <img id="img" src="/images/chief-projs.jpg" alt="" /> -->
       <div id="department_details">
         <ul>
           <li>
@@ -102,7 +104,7 @@
         <ul>
           <li>
             <h2>kevin gunga</h2>
-            <img src="/images/kevinn_gunga.jpeg" alt="staff1-image" />
+            <img src="{% static '/images/kevinn_gunga.jpeg' %}" alt="staff1-image" />
             <button class="bio-button">view bio</button>
             <div class="bio-details">
               <p>Contact: 0707168253</p>
@@ -112,7 +114,7 @@
           </li>
           <li>
             <h2>kevin gunga</h2>
-            <img src="/images/kevinn_gunga.jpeg" alt="staff2-image" />
+            <img src="{% static '/images/kevinn_gunga.jpeg' %}" alt="staff2-image" />
             <button class="bio-button">view bio</button>
             <div class="bio-details">
               <p>contact:0707168253</p>
@@ -122,7 +124,7 @@
           </li>
           <li>
             <h2>kevin gunga</h2>
-            <img src="/images/kevinn_gunga.jpeg" alt="staff3-image" />
+            <img src="{% static '/images/kevinn_gunga.jpeg' %}" alt="staff3-image" />
             <button class="bio-button">view bio</button>
             <div class="bio-details">
               <p>contact:0707168253</p>
@@ -132,7 +134,7 @@
           </li>
           <li>
             <h2>kevin gunga</h2>
-            <img src="/images/kevinn_gunga.jpeg" alt="staff4-image" />
+            <img src="{% static '/images/kevinn_gunga.jpeg' %}" alt="staff4-image" />
             <button class="bio-button">view bio</button>
             <div class="bio-details">
               <p>contact:0707168253</p>
@@ -142,7 +144,7 @@
           </li>
           <li>
             <h2>kevin gunga</h2>
-            <img src="/images/kevinn_gunga.jpeg" alt="staff5-image" />
+            <img src="{% static '/images/kevinn_gunga.jpeg' %}" alt="staff5-image" />
             <button class="bio-button">view bio</button>
             <div class="bio-details">
               <p>contact:0707168253</p>
@@ -152,7 +154,7 @@
           </li>
           <li>
             <h2>kevin gunga</h2>
-            <img src="/images/kevinn_gunga.jpeg" alt="staff6-image" />
+            <img src="{% static '/images/kevinn_gunga.jpeg' %}" alt="staff6-image" />
             <button class="bio-button">view bio</button>
             <div class="bio-details">
               <p>contact:0707168253</p>
@@ -162,7 +164,7 @@
           </li>
           <li>
             <h2>kevin gunga</h2>
-            <img src="/images/kevinn_gunga.jpeg" alt="staff7-image" />
+            <img src="{% static '/images/kevinn_gunga.jpeg' %}" alt="staff7-image" />
             <button class="bio-button">view bio</button>
             <div class="bio-details">
               <p>contact:0707168253</p>
@@ -173,7 +175,7 @@
 
           <li>
             <h2>kevin gunga</h2>
-            <img src="/images/kevinn_gunga.jpeg" alt="staff8-image" />
+            <img src="{% static '/images/kevinn_gunga.jpeg' %}" alt="staff8-image" />
             <button class="bio-button">view bio</button>
             <div class="bio-details">
               <p>contact:0707168253</p>
@@ -183,7 +185,7 @@
           </li>
           <li>
             <h2>kevin gunga</h2>
-            <img src="/images/kevinn_gunga.jpeg" alt="staff9-image" />
+            <img src="{% static '/images/kevinn_gunga.jpeg' %}" alt="staff9-image" />
             <button class="bio-button">vew bio</button>
             <div class="bio-details">
               <p>contact:0707168253</p>
@@ -193,6 +195,7 @@
           </li>
         </ul>
       </div>
+           
     </main>
     <footer>
       <div id="footer-details">
@@ -270,7 +273,7 @@
 
         <div id="chatbotMedia-Links">
           <div id="chatbot-overlay"></div>
-          <a  id="question-chatbot"
+          <a  href="{% url 'myapp:index' %}#chatbot-overlay" id="question-chatbot"
             ><i class="fa-solid fa-circle-question fa-3x"></i>
         </a>
 <!-- <button></button> -->

@@ -1,23 +1,24 @@
+{% load static  %} 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>attachment</title>
-    <link rel="stylesheet" href="/style/shared.css" />
-    <link rel="stylesheet" href="/style/attachees.css">
+    <link rel="stylesheet" href="{% static '/style/shared.css' %}" />
+    <link rel="stylesheet" href="{% static '/style/attachees.css' %}">
     <script
       src="https://kit.fontawesome.com/6f82847460.js"
       crossorigin="anonymous"
     ></script>
-    <script src="/scripts/attachees.js" defer></script>
-    <script src="/scripts/shared.js" defer></script>
+    <script src="{% static '/scripts/attachees.js' %}" defer></script>
+    <script src="{% static '/scripts/shared.js' %}" defer></script>
   </head>
   <body>
     <div id="backdrop"></div>
     <header>
       <div id="heading">
-        <img src="/images/mig_icon.png" alt="county logo" />
+        <a href="{% url 'myapp:index' %}"> <img src="{% static '/images/mig_icon.png' %}" alt="county logo" /></a>
         <h1>
           migori county government department of ict, e-governance and
           innovation
@@ -29,15 +30,13 @@
       <nav>
          <ul>
           <li>
-            <a href="">ict technical staff</a>
-          </li>
-          <li>
             <a href="">online meeting</a>
           </li>
           <li>
-            <a href="">attachment</a>
+            <a href="{% url 'myapp:attachees' %}#attendance">attendance</a>
           </li>
-          <li><a href="#form">report problem</a></li>
+          <li><a href="{% url 'myapp:attachees' %}#form">report problem</a></li>
+          <li><a href="{% url 'myapp:attachees' %}#chatbotMedia-Links">virtual assistant</a></li>
         </ul>
       <nav>
     </header>
@@ -184,7 +183,7 @@
 
         <div id="chatbotMedia-Links">
           <div id="chatbot-overlay"></div>
-          <a  id="question-chatbot"
+          <a  href="{% url 'myapp:attachees' %}#chatbot-overlay" id="question-chatbot"
             ><i class="fa-solid fa-circle-question fa-3x"></i>
           </a>
 <!-- <button></button> -->

@@ -10,12 +10,13 @@ main {
 }
 
 section {
+  background: url('/myproject/static/images/chief-projs.jpg');
   width: 100%;
   height: 950px;
-  background: url(/images/chief-projs.jpg);
   background-size: cover;
   position: relative;
   overflow: hidden;
+  background-repeat: no-repeat;
 }
 
 #body-overlay {
