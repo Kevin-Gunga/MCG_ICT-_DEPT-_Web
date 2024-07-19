@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(220, 220, 220);
+  background-color: rgb(245, 240, 240);
   margin: 0;
   padding: 0;
 }
@@ -10,7 +10,6 @@ main {
 }
 
 section {
-  background: url('/myproject/static/images/chief-projs.jpg');
   width: 100%;
   height: 950px;
   background-size: cover;
@@ -19,13 +18,16 @@ section {
   background-repeat: no-repeat;
 }
 
+section img {
+  width: 100%;
+}
+
 #body-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-color: rgba(0, 0, 255, 0.4);  */
   background-color: rgba(144, 238, 144, 0.6);
 }
 
@@ -64,11 +66,7 @@ section {
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(
-    to right,
-    rgb(54, 155, 76) 50%,
-    rgb(212, 200, 32) 50%
-  );
+  background: linear-gradient(to right,rgb(54, 155, 76) 50%,rgb(212, 200, 32) 50%);
 }
 
 #vision {
@@ -90,11 +88,7 @@ section {
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(
-    to right,
-    rgb(54, 155, 76) 50%,
-    rgb(212, 200, 32) 50%
-  );
+  background: linear-gradient(to right,rgb(54, 155, 76) 50%,rgb(212, 200, 32) 50%);
 }
 
 #goals {
@@ -116,11 +110,7 @@ section {
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(
-    to right,
-    rgb(54, 155, 76) 50%,
-    rgb(212, 200, 32) 50%
-  );
+  background: linear-gradient(to right,rgb(54, 155, 76) 50%, rgb(212, 200, 32) 50%);
 }
 
 #department_details ul li p {

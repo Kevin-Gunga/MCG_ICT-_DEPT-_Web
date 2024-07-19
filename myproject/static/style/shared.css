@@ -36,11 +36,13 @@ nav ul li {
   text-transform: capitalize;
   font-family: sans-serif;
   font-size: 20px;
+  font-weight: 600;
   padding: 10px 20px;
 }
 
 nav ul li a {
   color: rgb(212, 200, 32);
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -64,10 +66,10 @@ footer {
   display: flex;
   flex-direction: column;
   margin: 0 auto 20px auto;
-  height: 800px;
+  height: 900px;
   padding: 40px 40px 0 40px;
   background-color: rgb(74, 182, 98);
-  box-shadow: 2px 2px 3px 2px rgb(225, 230, 226);
+  box-shadow: 0px 0px 5px 1px rgb(225, 230, 226);
   border-radius: 6px;
 }
 
@@ -80,6 +82,7 @@ footer {
   font-family: serif;
   margin: 0 0 10px 0;
 }
+
 #core-values ul li {
   list-style: circle;
   text-transform: capitalize;
@@ -154,7 +157,8 @@ footer {
   text-decoration: none;
   margin: auto;
   padding: 6px;
-  width: 70px;
+  width: 60px;
+  cursor: pointer;
 }
 
 #submit-complain-form-button:hover {
@@ -164,7 +168,6 @@ footer {
 #chatbotMedia-Links {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   margin: auto;
 }
 
@@ -177,14 +180,18 @@ footer {
   display: none;
 }
 
+#chatbot-overlay h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #question-chatbot{
   margin: 10px auto 0 auto;
   padding: 10px 0;
   border-top: 2px solid rgb(220, 220, 220);
   cursor: pointer;
 }
-
-/* #media {} */
 
 #media h3 {
   text-transform: capitalize;
@@ -203,13 +210,13 @@ footer {
 footer p {
   height: 50px;
   margin: 50px 0 0 0;
-  padding: 20px 0 0 0 ;
+  padding: 20px 0 0 0;
   text-align: center;
   text-transform: capitalize;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-footer p a{
+footer p a {
   text-decoration: none;
   color: rgb(225, 230, 226);
 }

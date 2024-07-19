@@ -13,6 +13,7 @@
     ></script>
     <script src="{% static '/scripts/attachees.js' %}" defer></script>
     <script src="{% static '/scripts/shared.js' %}" defer></script>
+  
   </head>
   <body>
     <div id="backdrop"></div>
@@ -23,8 +24,7 @@
           migori county government department of ict, e-governance and
           innovation
         </h1>
-        <!-- <hr> -->
-        <!-- <span>V</span> -->
+       
       </div>
       <hr>
       <nav>
@@ -41,27 +41,24 @@
       <nav>
     </header>
     <main>
-        <form  id="form-1" action="" method="post">
-
+      <div id="student-image-form-1" style="background-size: cover; position: relative; overflow: hidden; background-repeat: no-repeat; background: url('{% static "images/mig_student1.jpg" %}')">
+        <form  id="form-1" action="" method="POST" enctype="multipart/form-data" >{% csrf_token %}
           <div id="apply-attachment-form">
             <p>Are you a student from any university/college and would wish to apply for an attachment in our department?Feel free to fill this form for application.Thank you!!!</p>
-            <!-- <label for="first-name"></label> -->
-            <input type="text" name="first-name" id="first-name" placeholder="Enter your first name"  class='apply-attachment-input'>
+          
+            <input type="text" name="first_name" id="first_name" placeholder="Enter your first name"  class='apply-attachment-input'>
 
-            <!-- <label for="second-name"></label> -->
-            <input type="text" name="second-name" id="second-name" placeholder="Enter your second name" class='apply-attachment-input'>
+            <input type="text" name="second_name" id="second_name" placeholder="Enter your second name" class='apply-attachment-input'>
 
-            <!-- <label for="email"></label> -->
+            <input type="text" name="surname" id="surname" placeholder="Enter your surname name" class='apply-attachment-input'>
+
             <input type="email" name="email" id="email" placeholder="Enter your email address" class='apply-attachment-input'>
 
-            <!-- <label for="id-number"></label> -->
-            <input type="number" name="id-number" id="id-number" placeholder="Enter your national id number" class='apply-attachment-input'>
+            <input type="number" name="id_number" id="id_number" placeholder="Enter your national id number" class='apply-attachment-input'>
 
-            <!-- <label for="institution-name"></label> -->
-            <input type="text" name="institution-name" id="institution-name" placeholder="Enter name of your institution"class='apply-attachment-input'>
+            <input type="text" name="institution_name" id="institution_name" placeholder="Enter name of your institution"class='apply-attachment-input'>
 
-            <label for="phone-number"></label>
-            <input type="number" name="phone-number" id="phone-number" placeholder="Enter your phone number" class='apply-attachment-input'>
+            <input type="text" name="phone_num" id="phone_number" placeholder="Enter your phone number" class='apply-attachment-input'>
 
             <label for="documents">Attach your resume and any other  necessary <br>documents</label>
             <input type="file" name="documents" id="documents">
@@ -69,39 +66,40 @@
           
             <div id="attachment-buttons">
               <button type="button"  id="submit-attachment-button">Cancel</button>
-              <button type="submit" id="submit-attachment-button" href="">Submit</button>
+              <button type="submit" id="submit-attachment-button">Submit</button>
             </div>      
         
         </form>
+     </div>
+     
 
         <div id="attendance">
           <button id="attendance-button">sign in attendance form</button>
-          <form id="form-2" action="" method="post">
-
+          <form id="form-2" action="" method="POST">{% csrf_token %}
+           
             <div id="sign-attendance-form">
-              <label for="">Enter date</label>
+              
+              <label for="date">Enter date</label>
               <input type="date" id="date" name="date">
     
-              <label for="f-name">Enter your full name</label>
-              <input type="text" id="f-name" name="f-name">
+              <label for="full_nam">Enter your full name</label>
+              <input type="text" id="full_nam" name="full_nam">
     
               <label for="id">Enter your national id</label>
               <input type="number" id="id" name="id">
     
-              <label for="">Enter time in</label>
-              <input type="time" id="time-in" name="time-in">
+              <label for="time_in">Enter time in</label>
+              <input type="time" id="time_in" name="time_in">
     
-              <label for="">Enter time out</label>
-              <input type="time" id="time-out" name="time-out">
+              <label for="time_out">Enter time out</label>
+              <input type="time" id="time_out" name="time_out">
             </div>
            
             <div id="attendance-buttons">
               <button type="button" class="submit-attendance-button" id="remove-attendance-form">Cancel</button>
               <button type="submit" class="submit-attendance-button">Submit</button>
             </div>
-            
-            <!-- <label for="">live location</label> -->
-  
+              
           </form>
         </div>
      
@@ -139,25 +137,22 @@
             </ul>
           </div>
 
-          <form id="form" action="url" method="post">
+          <form id="form" action="" method="POST" enctype="multipart/form-data" >
+            {% csrf_token %}
             <h3>report here:</h3>
-
+            
             <input
               type="email"
               name="email"
               id="email"
-              required
-              maxlength="20px"
               placeholder="Enter your email address"
               class="report-inputs"
             />
 
             <input
               type="number"
-              name="phone"
-              id="phone"
-              required
-              maxlength="10"
+              name="phone_num"
+              id="phone_num"
               placeholder="Enter your phone number"
               class="report-inputs"
             />
@@ -171,22 +166,28 @@
             />
 
             <textarea
-              name="complain"
+              name="complain_text"
               id="complain"
               placeholder="What is your issue?"
               class="report-inputs"
             ></textarea>
-            <input id="file" type="file" type="complain" name="complain" />
-            <a id="submit-complain-form-button" href="">submit</a>
+            <input id="file" name="complain_file" type="file" />
+            <button type="submit" id="submit-complain-form-button">
+              submit
+            </button>
           </form>
         </div>
 
         <div id="chatbotMedia-Links">
-          <div id="chatbot-overlay"></div>
-          <a  href="{% url 'myapp:attachees' %}#chatbot-overlay" id="question-chatbot"
+          <div id="chatbot-overlay">
+            <h3>How can we assist you?</h3>
+          </div>
+          <a
+            href="{% url 'myapp:attachees' %}#chatbot-overlay"
+            id="question-chatbot"
             ><i class="fa-solid fa-circle-question fa-3x"></i>
           </a>
-<!-- <button></button> -->
+        
           <div id="media">
             <ul>
               <li><h3>contact us:</h3></li>
@@ -217,9 +218,11 @@
       </div>
 
       <p id>
-        &copy;2024.developed by
+        &copy;2024
         <a href="Kevin-Gunga.netlify.app" target="_blank">kevin gunga</a>
+        . All rights reserved.
       </p>
     </footer>
   </body>
+
 </html>

@@ -14,6 +14,10 @@ body {
   display: none;
 }
 
+#student-image-form-1 {
+  display: flex;
+}
+
 #form-1 {
   background-color: rgb(225, 230, 226);
   margin: 20px auto 20px auto;
@@ -21,7 +25,7 @@ body {
   height: 650px;
   font-family: sans-serif;
   border-radius: 5px;
-  box-shadow: 2px 2px 5px rgb(101, 101, 101);
+  box-shadow:0px 0px 5px 1px rgb(101, 101, 101);
   display: flex;
   flex-direction: column;
 }
@@ -49,7 +53,6 @@ body {
 }
 
 #submit-attachment-button {
-  /* background-color: rgb(194, 172, 150); */
   border: none;
   font-family: sans-serif;
   font-weight: 600;
@@ -70,7 +73,7 @@ body {
 }
 
 #attendance-button {
-  background-color:  rgb(54, 155, 76);
+  background-color: rgb(74, 182, 98);
   color: rgb(22, 21, 6);
   border-radius: 5px;
   border: none;

@@ -17,7 +17,9 @@
   <body>
     <header>
       <div id="heading">
-        <a href="{% url 'myapp:index' %}"> <img src="{% static '/images/mig_icon.png' %}" alt="county logo" /></a>
+        <a href="{% url 'myapp:index' %}">
+          <img src="{% static '/images/mig_icon.png' %}" alt="county logo"
+        /></a>
         <h1>
           migori county government department of ict, e-governance and
           innovation
@@ -26,18 +28,24 @@
       <hr />
       <nav>
         <ul>
-          <li><a href="{% url 'myapp:index' %}#staff">ict technical staff</a></li>
+          <li>
+            <a href="{% url 'myapp:index' %}#staff">ict technical staff</a>
+          </li>
           <li><a href="">online meeting</a></li>
           <li><a href="{% url 'myapp:attachees' %}">attachment</a></li>
           <li><a href="{% url 'myapp:index' %}#form">report problem</a></li>
-          <li><a href="{% url 'myapp:index' %}#chatbotMedia-Links">virtual assistant</a></li>
+          <li>
+            <a href="{% url 'myapp:index' %}#chatbotMedia-Links"
+              >virtual assistant</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section>
-        <!-- <img src="{% static 'images/chief-projs.jpg' %}" alt=""> -->
+        <img src="{% static 'images/chief-projs.jpg' %}" alt="" />
         <div id="body-overlay"></div>
       </section>
 
@@ -104,7 +112,10 @@
         <ul>
           <li>
             <h2>kevin gunga</h2>
-            <img src="{% static '/images/kevinn_gunga.jpeg' %}" alt="staff1-image" />
+            <img
+              src="{% static '/images/kevinn_gunga.jpeg' %}"
+              alt="staff1-image"
+            />
             <button class="bio-button">view bio</button>
             <div class="bio-details">
               <p>Contact: 0707168253</p>
@@ -114,7 +125,10 @@
           </li>
           <li>
             <h2>kevin gunga</h2>
-            <img src="{% static '/images/kevinn_gunga.jpeg' %}" alt="staff2-image" />
+            <img
+              src="{% static '/images/kevinn_gunga.jpeg' %}"
+              alt="staff2-image"
+            />
             <button class="bio-button">view bio</button>
             <div class="bio-details">
               <p>contact:0707168253</p>
@@ -124,7 +138,10 @@
           </li>
           <li>
             <h2>kevin gunga</h2>
-            <img src="{% static '/images/kevinn_gunga.jpeg' %}" alt="staff3-image" />
+            <img
+              src="{% static '/images/kevinn_gunga.jpeg' %}"
+              alt="staff3-image"
+            />
             <button class="bio-button">view bio</button>
             <div class="bio-details">
               <p>contact:0707168253</p>
@@ -134,7 +151,10 @@
           </li>
           <li>
             <h2>kevin gunga</h2>
-            <img src="{% static '/images/kevinn_gunga.jpeg' %}" alt="staff4-image" />
+            <img
+              src="{% static '/images/kevinn_gunga.jpeg' %}"
+              alt="staff4-image"
+            />
             <button class="bio-button">view bio</button>
             <div class="bio-details">
               <p>contact:0707168253</p>
@@ -144,7 +164,10 @@
           </li>
           <li>
             <h2>kevin gunga</h2>
-            <img src="{% static '/images/kevinn_gunga.jpeg' %}" alt="staff5-image" />
+            <img
+              src="{% static '/images/kevinn_gunga.jpeg' %}"
+              alt="staff5-image"
+            />
             <button class="bio-button">view bio</button>
             <div class="bio-details">
               <p>contact:0707168253</p>
@@ -154,7 +177,10 @@
           </li>
           <li>
             <h2>kevin gunga</h2>
-            <img src="{% static '/images/kevinn_gunga.jpeg' %}" alt="staff6-image" />
+            <img
+              src="{% static '/images/kevinn_gunga.jpeg' %}"
+              alt="staff6-image"
+            />
             <button class="bio-button">view bio</button>
             <div class="bio-details">
               <p>contact:0707168253</p>
@@ -164,7 +190,10 @@
           </li>
           <li>
             <h2>kevin gunga</h2>
-            <img src="{% static '/images/kevinn_gunga.jpeg' %}" alt="staff7-image" />
+            <img
+              src="{% static '/images/kevinn_gunga.jpeg' %}"
+              alt="staff7-image"
+            />
             <button class="bio-button">view bio</button>
             <div class="bio-details">
               <p>contact:0707168253</p>
@@ -175,7 +204,10 @@
 
           <li>
             <h2>kevin gunga</h2>
-            <img src="{% static '/images/kevinn_gunga.jpeg' %}" alt="staff8-image" />
+            <img
+              src="{% static '/images/kevinn_gunga.jpeg' %}"
+              alt="staff8-image"
+            />
             <button class="bio-button">view bio</button>
             <div class="bio-details">
               <p>contact:0707168253</p>
@@ -185,7 +217,10 @@
           </li>
           <li>
             <h2>kevin gunga</h2>
-            <img src="{% static '/images/kevinn_gunga.jpeg' %}" alt="staff9-image" />
+            <img
+              src="{% static '/images/kevinn_gunga.jpeg' %}"
+              alt="staff9-image"
+            />
             <button class="bio-button">vew bio</button>
             <div class="bio-details">
               <p>contact:0707168253</p>
@@ -195,7 +230,6 @@
           </li>
         </ul>
       </div>
-           
     </main>
     <footer>
       <div id="footer-details">
@@ -228,16 +262,15 @@
               <li>adherence to values and principles of public service.</li>
             </ul>
           </div>
-
-          <form id="form" action="url" method="post">
+          
+          <form id="form" action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
             <h3>report here:</h3>
-
+            
             <input
               type="email"
               name="email"
               id="email"
-              required
-              maxlength="20px"
               placeholder="Enter your email address"
               class="report-inputs"
             />
@@ -246,8 +279,6 @@
               type="number"
               name="phone"
               id="phone"
-              required
-              maxlength="10"
               placeholder="Enter your phone number"
               class="report-inputs"
             />
@@ -261,22 +292,28 @@
             />
 
             <textarea
-              name="complain"
+              name="complain_text"
               id="complain"
               placeholder="What is your issue?"
               class="report-inputs"
             ></textarea>
-            <input id="file" type="file" type="complain" name="complain" />
-            <a id="submit-complain-form-button" href="">submit</a>
+            <input id="file" name="complain_file" type="file" />
+            <button type="submit" id="submit-complain-form-button">
+              submit
+            </button>
           </form>
         </div>
 
         <div id="chatbotMedia-Links">
-          <div id="chatbot-overlay"></div>
-          <a  href="{% url 'myapp:index' %}#chatbot-overlay" id="question-chatbot"
+          <div id="chatbot-overlay">
+            <h3>How can we assist you?</h3>
+          </div>
+          <a
+            href="{% url 'myapp:index' %}#chatbot-overlay"
+            id="question-chatbot"
             ><i class="fa-solid fa-circle-question fa-3x"></i>
-        </a>
-<!-- <button></button> -->
+          </a>
+          
           <div id="media">
             <ul>
               <li><h3>contact us:</h3></li>
@@ -307,8 +344,9 @@
       </div>
 
       <p id>
-        &copy;2024.developed by
+        &copy;2024
         <a href="Kevin-Gunga.netlify.app" target="_blank">kevin gunga</a>
+        . All rights reserved.
       </p>
     </footer>
   </body>
