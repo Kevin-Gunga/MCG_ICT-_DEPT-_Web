@@ -1,5 +1,6 @@
 body {
-  background-color: rgb(220, 220, 220);
+  /* background-color: rgb(220, 220, 220); */
+  background-color: #e2e1cf;
   margin: 0;
   padding: 0;
 }
@@ -16,13 +17,15 @@ body {
 
 #student-image-form-1 {
   display: flex;
+  flex-direction: column;
 }
 
 #form-1 {
-  background-color: rgb(225, 230, 226);
+  /* background-color: rgb(225, 230, 226); */
+  background-color: #8e9b72;
   margin: 20px auto 20px auto;
   width: 600px;
-  height: 650px;
+  height: 760px;
   font-family: sans-serif;
   border-radius: 5px;
   box-shadow:0px 0px 5px 1px rgb(101, 101, 101);
@@ -31,6 +34,7 @@ body {
 }
 
 #apply-attachment-form {
+  background-color: #8e9b72;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,8 +77,10 @@ body {
 }
 
 #attendance-button {
-  background-color: rgb(74, 182, 98);
-  color: rgb(22, 21, 6);
+  /* background-color: rgb(74, 182, 98); */
+  background-color: #8e9b72;
+  /* color: rgb(22, 21, 6); */
+  color: #ffffff;  
   border-radius: 5px;
   border: none;
   font-family: sans-serif;
@@ -89,7 +95,8 @@ body {
 }
 
 #form-2 {
-  background-color: rgb(225, 230, 226);
+  /* background-color: rgb(225, 230, 226); */
+  background-color: #8e9b72;
   margin: 0 auto 20px auto;
   width: 600px;
   height: 500px;
@@ -113,7 +120,7 @@ body {
 }
 
 #sign-attendance-form input {
-  margin: 0 auto 20px auto;
+  margin: 6px auto 20px auto;
   width: 300px;
   height: 30px;
   border: 2px solid rgb(220, 220, 220);

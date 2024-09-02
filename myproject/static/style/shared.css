@@ -1,5 +1,6 @@
 header {
-  background-color: rgb(54, 155, 76);
+  /* background-color: rgb(54, 155, 76); */
+  background-color: #253f30;
 }
 
 #heading {
@@ -22,6 +23,7 @@ header {
   font-weight: 600;
   margin: 20px;
   cursor: pointer;
+  color: #ffffff;
 }
 
 nav ul {
@@ -41,7 +43,8 @@ nav ul li {
 }
 
 nav ul li a {
-  color: rgb(212, 200, 32);
+  /* color: rgb(212, 200, 32); */
+  color: #d6c227;
   font-weight: 600;
   text-decoration: none;
 }
@@ -54,8 +57,10 @@ nav ul li:hover {
 }
 
 footer {
-  background-color: rgb(54, 155, 76);
+  /* background-color: rgb(54, 155, 76); */
+  background-color: #253f30;
   padding: 20px 0 0px 0;
+  color: #ffffff;
 }
 
 #footer-details {
@@ -68,7 +73,7 @@ footer {
   margin: 0 auto 20px auto;
   height: 900px;
   padding: 40px 40px 0 40px;
-  background-color: rgb(74, 182, 98);
+  /* background-color: rgb(74, 182, 98); */
   box-shadow: 0px 0px 5px 1px rgb(225, 230, 226);
   border-radius: 6px;
 }
@@ -172,7 +177,8 @@ footer {
 }
 
 #chatbot-overlay {
-  background-color: rgb(220, 220, 220);
+  /* background-color: rgb(220, 220, 220); */
+  background-color: #e2e1cf;
   height: 400px;
   width: 350px;
   border-radius: 6px;
@@ -191,6 +197,7 @@ footer {
   padding: 10px 0;
   border-top: 2px solid rgb(220, 220, 220);
   cursor: pointer;
+  color: #ffffff;
 }
 
 #media h3 {
@@ -204,7 +211,8 @@ footer {
 }
 
 #media ul li a {
-  text-decoration: none;    
+  text-decoration: none;
+  color: #ffffff;    
 }
 
 footer p {

@@ -56,9 +56,14 @@
 
             <input type="number" name="id_number" id="id_number" placeholder="Enter your national id number" class='apply-attachment-input'>
 
-            <input type="text" name="institution_name" id="institution_name" placeholder="Enter name of your institution"class='apply-attachment-input'>
+            <input type="text" name="institution_name" id="institution_name" placeholder="Enter name of your institution" class='apply-attachment-input'>
+
+            <input type="text" name="course" id="course" placeholder="Enter name of your course of study" class='apply-attachment-input'>
 
             <input type="text" name="phone_num" id="phone_number" placeholder="Enter your phone number" class='apply-attachment-input'>
+
+            <label for="year_study">Enter your year of study</label>
+            <input type="date" name="year_study" id="year_study" placeholder="Enter name of your year of study" class='apply-attachment-input'>
 
             <label for="documents">Attach your resume and any other  necessary <br>documents</label>
             <input type="file" name="documents" id="documents">
@@ -70,8 +75,6 @@
             </div>      
         
         </form>
-     </div>
-     
 
         <div id="attendance">
           <button id="attendance-button">sign in attendance form</button>
@@ -102,6 +105,38 @@
               
           </form>
         </div>
+     </div>
+     
+
+        {% comment %} <div id="attendance">
+          <button id="attendance-button">sign in attendance form</button>
+          <form id="form-2" action="" method="POST">{% csrf_token %}
+           
+            <div id="sign-attendance-form">
+              
+              <label for="date">Enter date</label>
+              <input type="date" id="date" name="date">
+    
+              <label for="full_nam">Enter your full name</label>
+              <input type="text" id="full_nam" name="full_nam">
+    
+              <label for="id">Enter your national id</label>
+              <input type="number" id="id" name="id">
+    
+              <label for="time_in">Enter time in</label>
+              <input type="time" id="time_in" name="time_in">
+    
+              <label for="time_out">Enter time out</label>
+              <input type="time" id="time_out" name="time_out">
+            </div>
+           
+            <div id="attendance-buttons">
+              <button type="button" class="submit-attendance-button" id="remove-attendance-form">Cancel</button>
+              <button type="submit" class="submit-attendance-button">Submit</button>
+            </div>
+              
+          </form>
+        </div> {% endcomment %}
      
     </main>
  
